@@ -15,7 +15,7 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(me
 logger = logging.getLogger(__name__)
 
 # Environment setup
-os.environ['OPENAI_API_KEY'] = os.getenv('API_KEY')
+os.environ['OPENAI_API_KEY'] = os.getenv('OPENAI_API_KEY')
 VECTOR_STORAGE_DIR = "./vector_2"
 DATA_STORAGE_DIR = "./data_2"
 os.makedirs(DATA_STORAGE_DIR, exist_ok=True)
