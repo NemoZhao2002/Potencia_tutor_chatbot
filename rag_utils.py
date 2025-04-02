@@ -18,6 +18,7 @@ logger = logging.getLogger(__name__)
 load_dotenv()
 
 # Environment setup
+os.environ['OPENAI_API_KEY'] = ""
 VECTOR_STORAGE_DIR = "./vector_2"
 DATA_STORAGE_DIR = "./data_2"
 os.makedirs(DATA_STORAGE_DIR, exist_ok=True)
