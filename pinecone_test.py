@@ -5,7 +5,6 @@ import logging
 # Import the create_chat_engine function from your module
 from rag_utils import create_chat_engine_pinecone, upload_vectors_to_pinecone
 
-# Logging setup
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 logger = logging.getLogger(__name__)
 

@@ -18,7 +18,7 @@ logger = logging.getLogger(__name__)
 load_dotenv()
 
 # Environment setup
-os.environ['OPENAI_API_KEY'] = "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"
+os.environ['OPENAI_API_KEY'] = ""
 VECTOR_STORAGE_DIR = "./vector_2"
 DATA_STORAGE_DIR = "./data_2"
 os.makedirs(DATA_STORAGE_DIR, exist_ok=True)
@@ -90,7 +90,7 @@ def load_any_documents(dirpath:str):
             
     return documents
 
-os.environ["PINECONE_API_KEY"] = "pcsk_6gL53e_BuABe9Au142Zh77mk8MD6tLooK1wBgH5sDH8iAZLxTvE2KepZKmQPxpRtsSQoA"
+os.environ["PINECONE_API_KEY"] = ""
 api_key = os.environ["PINECONE_API_KEY"]
 index_name = "potencia"
 pc = Pinecone(api_key=api_key)
